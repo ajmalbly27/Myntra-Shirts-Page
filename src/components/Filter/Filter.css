@@ -1,0 +1,8 @@
+.filter-holder {
+    width: 250px;
+    /* width: 20vw; */
+    /* min-height: 70vh; */
+    padding: 0 35px;
+    margin-right: 15px;
+    background-color: rgba(247, 243, 243, 0.856);
+}
