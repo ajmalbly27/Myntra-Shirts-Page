@@ -1,8 +1,14 @@
 import logo from '../../images/Myntra-Logo.png';
 import './Navbar.css';
 import bag from "../../images/bag.png";
+import { useContext } from 'react';
+import { AppContext } from '../../context/AppContext';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = ()  => {
+    const { cart } = useContext(AppContext);
+    const navigate = useNavigate();
+
     return(
      <div className="container">
         <div className="left-container">
@@ -22,10 +28,10 @@ const Navbar = ()  => {
                 <input type='text' className='search' placeholder='Search for products, brands and more'/>
             </div>
             <div className="profile-wishlist-bag">
-                {/* <div className='profile'><p>Profile</p></div>
-                <div className='wishlist'><p>Wishlist</p></div>
-                <div className='bag'><p>Bag</p></div> */}
-                <img src={bag} alt='bag-img'/>
+                <div className='bag-wrapper'>
+                    <img src={bag} alt='bag-img' onClick={() => navigate('/Cart')}/>
+                    {cart.length ? <spna className="bag-span">{cart.length}</spna> : null}
+                </div>
                 <button className='login-logout-button'>Login</button>
             </div>
         </div>

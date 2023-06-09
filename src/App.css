@@ -3,7 +3,13 @@
 }
 
 .text {
-    margin-left: 35px;
+    /* margin-left: 35px; */
+    padding-left: 35px;
+}
+
+.filter {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(214, 205, 205);
 }
 
 .product-filter-wrapper {

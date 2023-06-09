@@ -3,13 +3,23 @@ img {
     width: 230px;
 }
 
+.product-name {
+    margin-left: 15px;
+    font-weight: 650;
+}
+
+.product-description {
+    margin-left: 15px;
+    color: grey;
+}
+
 .products-wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.product-image {
+.product {
     margin: 0 15px;
     margin-bottom: 15px;
 }
@@ -29,4 +39,16 @@ img {
 
 .discount {
     color: red;
+}
+
+.btn {
+    width: 100%;
+    margin: 3px 0;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff3e6c;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
 }

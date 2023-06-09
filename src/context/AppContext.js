@@ -8,6 +8,14 @@ export const AppProvider = (props) => {
     const [filteredProducts, setFilteredProducts] = useState(data);
     const [cart, setCart] = useState([]);
 
+    let addToCart = (selectedProduct) => {
+        if(cart.includes(selectedProduct)) {
+            return;
+        }
+        setCart([...cart, selectedProduct]);
+        // console.log(cart);
+    }
+
     return(
         <AppContext.Provider value={{
             allProducts,
@@ -15,7 +23,7 @@ export const AppProvider = (props) => {
             filteredProducts,
             setFilteredProducts,
             cart,
-            setCart            
+            addToCart          
         }}>
             {props.children}
         </AppContext.Provider>
