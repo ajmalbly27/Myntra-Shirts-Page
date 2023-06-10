@@ -32,7 +32,7 @@ const Navbar = ()  => {
                     <img src={bag} alt='bag-img' onClick={() => navigate('/Cart')}/>
                     {cart.length ? <spna className="bag-span">{cart.length}</spna> : null}
                 </div>
-                <button className='login-logout-button'>Login</button>
+                <button className='login-logout-button'>LOGIN</button>
             </div>
         </div>
      </div>   

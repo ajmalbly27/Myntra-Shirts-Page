@@ -13,17 +13,6 @@ img {
     color: grey;
 }
 
-.products-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.product {
-    margin: 0 15px;
-    margin-bottom: 15px;
-}
-
 .product-details {
     margin-left: 15px;
 }
@@ -39,6 +28,17 @@ img {
 
 .discount {
     color: red;
+}
+
+.products-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.product {
+    margin: 0 15px;
+    margin-bottom: 15px;
 }
 
 .btn {
