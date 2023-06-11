@@ -18,12 +18,13 @@ let data = [
         ] 
     }, 
     {  
-        'cat': '', 
+        'cat': '',
         'folded': 'Y', 
         'gender': 'M', 
         'name': 'Dennis Lingo', 
         'description': 'Men Slim Fit Casual Shirt', 
-        'finalPrice': '554', 'strickPrice': '1849', 
+        'finalPrice': '554', 
+        'strickPrice': '1849', 
         'discount': 70, 
         'productSize': '38, 40, 42, 44, 46', 
         'link': 'https://www.myntra.com/shirts/dennis-lingo/dennis-lingo-men-pink-slim-fit-solid-casual-shirt/7488102/buy', 

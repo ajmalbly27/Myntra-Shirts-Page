@@ -15,7 +15,7 @@ const EmptyCartNavbar = () => {
             </div>
             <div className="secure-sign-cart">
                 <img className="right-sign" src={logoright} alt="right-sign"/>
-                <spna className="text-cart-navbar-empty">&nbsp;100% SECURE</spna>
+                <span className="text-cart-navbar-empty">&nbsp;100% SECURE</span>
             </div>
         </div>
     )

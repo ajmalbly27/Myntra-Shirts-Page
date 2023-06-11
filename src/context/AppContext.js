@@ -8,13 +8,51 @@ export const AppProvider = (props) => {
     const [filteredProducts, setFilteredProducts] = useState(data);
     const [cart, setCart] = useState([]);
 
-    let addToCart = (selectedProduct) => {
-        if(cart.includes(selectedProduct)) {
+    // let addToCart = (selectedProduct) => {
+    //     if(cart.includes(selectedProduct)) {
+    //         return;
+    //     }
+    //     setCart([...cart, selectedProduct]);
+    //     // console.log(cart);
+    // }
+
+    const addToCart = (selectedProduct) => {
+        const selectedProductWithQuantity = { ...selectedProduct, quantity: 1 }; // Set a default quantity of 1
+        setCart((prevItems) => {
+            const selectedProductKey = generateSelectedProductKey(selectedProduct);
+
+            return [...prevItems, {...selectedProductWithQuantity, key: selectedProductKey }]
+
+        });
+    };
+
+    const increaseQuantity = (item) => {
+        setCart((prevItems) =>
+          prevItems.map((prevItem) =>
+            prevItem.key === item.key
+              ? { ...prevItem, quantity: prevItem.quantity + 1 }
+              : prevItem
+          )
+        );
+    };
+
+    const decreaseQuantity = (item) => {
+        if(item.quantity === 1) {
             return;
         }
-        setCart([...cart, selectedProduct]);
-        // console.log(cart);
-    }
+        setCart((prevItems) =>
+          prevItems.map((prevItem) =>
+            prevItem.key === item.key
+              ? { ...prevItem, quantity: prevItem.quantity - 1 }
+              : prevItem
+          )
+        );
+    };
+
+    const generateSelectedProductKey = (item) => {
+        // Concatenate relevant properties to create a unique key
+        return `${item.name}-${item.description}-${item.finalPrice}-${item.strickPrice}`;
+    };
 
     return(
         <AppContext.Provider value={{
@@ -23,7 +61,9 @@ export const AppProvider = (props) => {
             filteredProducts,
             setFilteredProducts,
             cart,
-            addToCart          
+            addToCart,
+            increaseQuantity,
+            decreaseQuantity
         }}>
             {props.children}
         </AppContext.Provider>

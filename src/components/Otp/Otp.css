@@ -1,0 +1,45 @@
+.otp-wrapper{
+    height: 87vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.otp-container{
+    height: auto;
+    width: 445px;
+    background-color:white;
+    margin-top: 40px;
+    padding: 55px;
+    margin-bottom: 50px;
+}
+.otp-logo img{
+    /* width: 60%; */
+    margin-left: -25px;
+}
+.verify{
+    font-size:x-large;
+    font-weight:550;
+}
+.otp-box{
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.otp-input {
+    width: 35px;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid black;
+    margin-right: 25px;
+  }
+  
+.otp-resend{
+    text-transform: uppercase;
+    color:#ff3e6c;
+    font-weight: 600;
+    font-size:12px ;
+    border: none;
+    background-color: white;
+}

@@ -30,7 +30,7 @@ const Navbar = ()  => {
             <div className="profile-wishlist-bag">
                 <div className='bag-wrapper'>
                     <img src={bag} alt='bag-img' onClick={() => navigate('/Cart')}/>
-                    {cart.length ? <spna className="bag-span">{cart.length}</spna> : null}
+                    {cart.length ? <span className="bag-span">{cart.length}</span> : null}
                 </div>
                 <button className='login-logout-button'>LOGIN</button>
             </div>

@@ -4,7 +4,6 @@ import './Product.css';
 
 const Product = () => {
     const { filteredProducts } = useContext(AppContext);
-    // const { cart } = useContext(AppContext);
     const { addToCart } = useContext(AppContext);
 
     return(

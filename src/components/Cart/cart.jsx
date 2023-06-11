@@ -4,6 +4,7 @@ import "./Cart.css";
 import CartItem from "../CartItem/cartItem";
 import EmptyCart from "../EmptyCart/EmptyCart";
 import EmptyCartNavbar from "../EmptyCart/EmptyCartNavbar";
+import PriceCalculation from "../PriceCalculation/PriceCalculation";
 
 const Cart = () => {
     const { cart } = useContext(AppContext);
@@ -23,34 +24,7 @@ const Cart = () => {
                     }
                 </div>
                 <div>
-                    {   cart.length>0 &&
-                        <div className="price-wrapper">
-                            <div>PRICE DETAILS</div>
-                            <div className="price-details">
-                                <div>Total MRP</div>
-                                <div>2000</div>
-                            </div>
-                            <div className="price-details">
-                                <div>Discount on MRP</div>
-                                <div>-1500</div>
-                            </div>
-                            <div className="price-details">
-                                <div>Coupon Discount</div>
-                                <div>Apply Coupon</div>
-                            </div>
-                            <div className="price-details">
-                                <div>Convenience Fee</div>
-                                <div>10</div>
-                            </div>
-                            <div className="price-details">
-                                <div>Total Amount</div>
-                                <div>500</div>
-                            </div>
-                            <div>
-                                <button>PLACE ORDER</button>
-                            </div>
-                        </div>
-                    }               
+                    {   cart.length>0 && <PriceCalculation />   }               
                 </div>
             </div>
         </div>

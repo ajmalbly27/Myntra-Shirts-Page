@@ -6,6 +6,9 @@ import Filter from './components/Filter/Filter';
 import Footer from './components/Footer/Footer';
 import NavBar from './components/Header/Navbar';
 import Product from './components/Product/Product';
+import Login from './components/Login/Login';
+import Otp from './components/Otp/Otp';
+import Afterotp from './components/Afterotp/Afterotp';
 
 function App() {
   return (
@@ -24,6 +27,11 @@ function App() {
           </div>
         }/>
         <Route path='/Cart' element={<Cart />}/>
+
+        <Route path='/Login' element={<Login />}/>
+        <Route path='/OTPPage' element={<Otp />}/>
+        <Route path='/AfterOtp' element={<Afterotp />}/>
+        
       </Routes>
     </div>
   );

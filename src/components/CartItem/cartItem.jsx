@@ -1,20 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "./CartItem.css";
 import retrun_logo from "../../images/return-button.png";
+import { AppContext } from "../../context/AppContext";
 
 const CartItem = ({ product }) => {
-    const [quantity, setQuantity] = useState(1);
 
-    const decreaseQuantity = () => {
-        if(quantity === 1){
-            return;
-        }
-        setQuantity(prevQuantity => prevQuantity - 1);
-    }
-
-    const increaseQuantity = () => {
-        setQuantity(prevQuantity => prevQuantity + 1);
-    }
+    const { increaseQuantity } = useContext(AppContext);
+    const { decreaseQuantity } = useContext(AppContext);
 
     return (
         <div className="cart-product">
@@ -32,9 +24,9 @@ const CartItem = ({ product }) => {
                             <span className="discount"> ({product.discount}% OFF)</span>
                         </div>
                         <div className="product-quantity">
-                            <button className="minus" onClick={decreaseQuantity}>-</button>
-                            <span className="quantity-text">{`Qty : ${quantity}`}</span>
-                            <button className="plus" onClick={increaseQuantity}>+</button>
+                            <button className="minus" onClick={() => decreaseQuantity(product)}>-</button>
+                            <span className="quantity-text">{`Qty : ${product.quantity}`}</span>
+                            <button className="plus" onClick={() => increaseQuantity(product)}>+</button>
                         </div>
                         <div className="return-time">
                             <img src={retrun_logo} style={{width:15}} alt="return-icon"/>
