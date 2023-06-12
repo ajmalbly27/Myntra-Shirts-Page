@@ -9,6 +9,7 @@ const CartItem = ({ product }) => {
     const { decreaseQuantity } = useContext(AppContext);
 
     return (
+        
         <div className="cart-product">
             <div className="cart-wrapper-item">
                 <div className="item-image-text">
@@ -38,6 +39,7 @@ const CartItem = ({ product }) => {
                 <div className="cancel-button">X</div>
             </div>
         </div>
+
     )
     
 }

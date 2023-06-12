@@ -32,7 +32,7 @@ const Navbar = ()  => {
                     <img src={bag} alt='bag-img' onClick={() => navigate('/Cart')}/>
                     {cart.length ? <span className="bag-span">{cart.length}</span> : null}
                 </div>
-                <button className='login-logout-button'>LOGIN</button>
+                <button className='login-logout-button' onClick={() => navigate("./Login")}>LOGIN</button>
             </div>
         </div>
      </div>   

@@ -8,9 +8,14 @@ const Otpinput = ({ generatedOTP, generateOTP, navigateToPage }) => {
   const inputRefs = useRef([]);
   const location = useLocation();
   const [otp, setOTP] = useState(["", "", "", ""]);
+  
+  
   useEffect(()=>{
     generateOTP();
+    // eslint-disable-next-line
   },[])
+  
+
   const handleInputChange = (event, index) => {
     const value = event.target.value;
     // Update the OTP array with the new value at the specified index

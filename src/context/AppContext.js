@@ -8,20 +8,26 @@ export const AppProvider = (props) => {
     const [filteredProducts, setFilteredProducts] = useState(data);
     const [cart, setCart] = useState([]);
 
-    // let addToCart = (selectedProduct) => {
-    //     if(cart.includes(selectedProduct)) {
-    //         return;
-    //     }
-    //     setCart([...cart, selectedProduct]);
-    //     // console.log(cart);
-    // }
-
     const addToCart = (selectedProduct) => {
+    
         const selectedProductWithQuantity = { ...selectedProduct, quantity: 1 }; // Set a default quantity of 1
-        setCart((prevItems) => {
-            const selectedProductKey = generateSelectedProductKey(selectedProduct);
+        const selectedProductKey = generateSelectedProductKey(selectedProduct);
+        const selectedProductWithKeyAndQuantity = { ...selectedProductWithQuantity, key: selectedProductKey }; // Set a key to the product 
+        let isProductPresent = false;
+        cart.map((item) => {
+            if(item.key === selectedProductWithKeyAndQuantity.key) {
+                isProductPresent = true;
+            }
+            return undefined;
+        })
 
-            return [...prevItems, {...selectedProductWithQuantity, key: selectedProductKey }]
+        if(isProductPresent) {
+            console.log("Product is present already!");
+            return;
+        }
+
+        setCart((prevItems) => {
+            return [...prevItems, { ...selectedProductWithKeyAndQuantity }]
 
         });
     };
@@ -54,16 +60,36 @@ export const AppProvider = (props) => {
         return `${item.name}-${item.description}-${item.finalPrice}-${item.strickPrice}`;
     };
 
+    const allFilter = () => {
+        setFilteredProducts(allProducts);
+    }
+    
+    const maleFilter = () => {
+        setFilteredProducts([]);
+        setFilteredProducts(allProducts.filter((item) => {
+            return item.gender === 'M';
+        }))
+    }
+
+    const femaleFilter = () => {
+        setFilteredProducts([]);
+        setFilteredProducts(allProducts.filter((item) => {
+            return item.gender === 'F';
+        }))
+
+    }
+
     return(
         <AppContext.Provider value={{
-            allProducts,
-            setAllProducts,
             filteredProducts,
             setFilteredProducts,
             cart,
             addToCart,
             increaseQuantity,
-            decreaseQuantity
+            decreaseQuantity,
+            allFilter,
+            maleFilter,
+            femaleFilter
         }}>
             {props.children}
         </AppContext.Provider>
