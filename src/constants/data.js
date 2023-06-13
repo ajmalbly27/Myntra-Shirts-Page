@@ -1,4 +1,5 @@
 let data = [
+
     { 
         'cat': '', 
         'folded': 'Y', 
@@ -17,6 +18,26 @@ let data = [
             'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2414313/2018/3/13/11520926368483-HERENOW-Men-Red--Black-Regular-Fit-Checked-Casual-Shirt-8881520926368447-4.jpg'
         ] 
     }, 
+
+    { 
+        'cat': 'W', 
+        'folded': '', 
+        'gender': 'F', 
+        'name': 'Tokyo Talkies', 
+        'description': 'Regular Fit Casual Shirt', 
+        'finalPrice': '459', 
+        'strickPrice': '1149', 
+        'discount': 60, 
+        'productSize': 'S, M, L, XL', 
+        'link': 'https://www.myntra.com/shirts/tokyo-talkies/tokyo-talkies-women-blue--white-regular-fit-striped-casual-shirt/12479234/buy', 
+        'otherImages': [
+            "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/9/18/5e1f50c9-145b-4f2a-b059-31d7830136b81600384601193-1.jpg", 
+            "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/9/18/433cf019-5053-42b6-8f19-858c579f680a1600384601272-2.jpg", 
+            "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/9/18/a0651e51-0cab-4af2-b9ae-89dfa4bf1a3a1600384601365-3.jpg", 
+            "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/9/18/6bb57e6f-a43e-433e-a2e9-a663262a5a541600384601460-4.jpg"
+        ] 
+    },
+
     {  
         'cat': '',
         'folded': 'Y', 
@@ -35,6 +56,26 @@ let data = [
             'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7488102/2019/8/22/9292c168-14fc-45b0-94d7-442414f8d4f81566454086728-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-4.jpg'
         ] 
     }, 
+
+    { 
+        'cat': '', 
+        'folded': '', 
+        'gender': 'F', 
+        'name': 'Roadster', 
+        'description': 'Regular Fit Cuban Collar Shirt', 
+        'finalPrice': '599', 
+        'strickPrice': '999', 
+        'discount': 40, 
+        'productSize': 'S, M, L, XL', 
+        'link': 'https://www.myntra.com/shirts/roadster/roadster-women-teal-blue-regular-fit-solid-cuban-collar-casual-shirt/11934526/buy', 
+        'otherImages': [
+            "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11934526/2020/11/27/81b0f4aa-78a0-408d-abd0-9a6b8b6107511606454194733-Roadster-Women-Tops-441606454192561-1.jpg", 
+            "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11934526/2020/11/27/74f0e100-e1ee-4f6a-9406-e8eedb15346d1606454194692-Roadster-Women-Tops-441606454192561-2.jpg", 
+            "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11934526/2020/11/27/de1236f2-8aea-4508-b79a-9cd2578500181606454194653-Roadster-Women-Tops-441606454192561-3.jpg", 
+            "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11934526/2020/11/27/6c3992ad-e5ea-4bea-ae06-2b209ca20f3c1606454194617-Roadster-Women-Tops-441606454192561-4.jpg"
+        ] 
+    },
+
     { 
         'cat': '', 
         'folded': 'Y', 
@@ -53,6 +94,7 @@ let data = [
             'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7163245/2019/12/3/0d9c10dc-3840-4ea2-9da1-5a3abb7a56281575367574382-HIGHLANDER-Men-Navy-Blue--Maroon-Slim-Fit-Striped-Casual-Shi-4.jpg'
         ] 
     }, 
+
     { 
         'cat': '', 
         'folded': '', 
@@ -71,6 +113,7 @@ let data = [
             'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11008602/2020/1/20/6e6c56b3-3053-402b-87c3-819b1c013a6d1579510958114-Roadster-Men-Shirts-7641579510955741-4.jpg'
         ] 
     }
+
     // , { 
     //     'cat': 'W', 
     //     'folded': 'Y', 
@@ -151,8 +194,8 @@ let data = [
     { 'cat': '', 'folded': 'Y', 'gender': 'F', 'name': 'Vero Moda', 'description': 'Regular Fit Casual Shirt', 'finalPrice': '899', 'strickPrice': '1799', 'discount': 50, 'productSize': 'XS, S, M, L, XL', 'link': 'https://www.myntra.com/shirts/vero-moda/vero-moda-women-green--white-regular-fit-checked-casual-shirt/11505132/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11505132/2020/2/26/a6e75438-d508-45f0-b1d8-d96b086aa8a81582693524005-Vero-Moda-Women-Shirts-4211582693522225-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11505132/2020/2/26/3898a1e1-fac3-42ed-af2c-56ee2c0041d61582693523958-Vero-Moda-Women-Shirts-4211582693522225-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11505132/2020/2/26/3302beec-1e94-4ff7-afb5-674d011a1fcb1582693523912-Vero-Moda-Women-Shirts-4211582693522225-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11505132/2020/2/26/32e6145a-696a-471c-955b-c37013d6a71e1582693523871-Vero-Moda-Women-Shirts-4211582693522225-4.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11505132/2020/2/26/8d80f296-e6cb-41ae-bfc6-422c478ed6931582693523833-Vero-Moda-Women-Shirts-4211582693522225-5.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11505132/2020/2/26/1443e353-5cc1-4d1a-bdae-548902b71bdd1582693523787-Vero-Moda-Women-Shirts-4211582693522225-6.jpg"] },
     { 'cat': '', 'folded': '', 'gender': 'F', 'name': 'GAP', 'description': 'Regular Fit Chambray Shirt', 'finalPrice': '1249', 'strickPrice': '2499', 'discount': 50, 'productSize': 'XXS, XS, S, M, L, XL', 'link': 'https://www.myntra.com/shirts/gap/gap-women-blue-regular-fit-faded-casual-chambray-shirt/11494580/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11494580/2020/3/3/fc294a56-a821-4e22-b0d5-1d2dac2032fa1583239605413-GAP-Women-Tops-8001583239603148-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11494580/2020/3/4/20122311-9ecc-468e-8832-c7fcbd699d1a1583300881984-GAP-Women-Blue-Regular-Fit-Faded-Casual-Shirt-58815833008814-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11494580/2020/3/4/0fda920e-e6f0-4294-ae13-029e2a39d1e61583300881927-GAP-Women-Blue-Regular-Fit-Faded-Casual-Shirt-58815833008814-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11494580/2020/3/3/4f72d869-7f4d-43f3-b9ae-8c9ef0d99c551583239605281-GAP-Women-Tops-8001583239603148-4.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11494580/2020/3/3/d0db2e51-6a40-4804-b31a-ecad8449c40b1583239605239-GAP-Women-Tops-8001583239603148-5.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11494580/2020/3/3/91c9d336-79a0-4dd8-8bf9-f4f4197770351583239605181-GAP-Women-Tops-8001583239603148-6.jpg"] },
     { 'cat': 'W', 'folded': '', 'gender': 'F', 'name': 'DOROTHY PERKINS', 'description': 'Regular Fit Casual Shirt', 'finalPrice': '1813', 'strickPrice': '2790', 'discount': 35, 'productSize': 'XS, S, M, L, XL, XXL, 3XL, 4XL, 5XL', 'link': 'https://www.myntra.com/shirts/dorothy-perkins/dorothy-perkins-women-white--blue-regular-fit-striped-casual-shirt/12310948/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12310948/2020/8/27/dd16b928-6aa7-4b56-92d1-28fd166be9d61598503822134TopsMANGOWomenTshirtsMANGOMANMenDressesMANGOWomenTshirtsMANG1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12310948/2020/8/27/2ca21e7f-6059-44de-bc08-4fd49838ba9d1598503822322TopsMANGOWomenTshirtsMANGOMANMenDressesMANGOWomenTshirtsMANG2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12310948/2020/8/27/88cdd170-b74a-4a86-8ee0-1985684d0bdd1598503822420TopsMANGOWomenTshirtsMANGOMANMenDressesMANGOWomenTshirtsMANG3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12310948/2020/8/27/4e3b4d5a-cb88-455f-9a8e-3ec37a241f351598503822510TopsMANGOWomenTshirtsMANGOMANMenDressesMANGOWomenTshirtsMANG4.jpg"] },
-    // { 'cat': '', 'folded': 'Y', 'gender': 'F', 'name': 'People', 'description': 'Slim Fit Casual Shirt', 'finalPrice': '', 'strickPrice': '', 'discount': 0, 'productSize': 'XS, S, M, L, XL', 'link': 'https://www.myntra.com/shirts/people/people-women-red-slim-fit-printed-casual-shirt/13326742/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/29/67f758f5-4ae3-4b64-9d04-12b0653882ac1609216911815-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/29/bfe99a69-6150-4723-bbf0-71a9427b9f151609216911865-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/29/022f8755-1003-418a-a4d6-1b080b591a5f1609216911910-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/29/0ddb8111-22d7-4961-92d7-747515b6bd4b1609216911967-4.jpg"] },
-    { 'cat': '', 'folded': '', 'gender': 'F', 'name': 'Roadster', 'description': 'Women Slim Fit Casual Shirt', 'finalPrice': '699', 'strickPrice': '1399', 'discount': 50, 'productSize': 'XS, S, M, L, XL', 'link': 'https://www.myntra.com/shirts/roadster/roadster-women-white--black-slim-fit-checked-casual-shirt/1805909/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1805909/2017/4/20/11492684152945-Roadster-Women--white-Regular-Fit-Checked-Casual-Shirt-3201492684152700-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1805909/2017/4/20/11492684152923-Roadster-Women--white-Regular-Fit-Checked-Casual-Shirt-3201492684152700-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1805909/2017/4/20/11492684152901-Roadster-Women--white-Regular-Fit-Checked-Casual-Shirt-3201492684152700-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1805909/2017/4/20/11492684152867-Roadster-Women--white-Regular-Fit-Checked-Casual-Shirt-3201492684152700-4.jpg"] },
+    { 'cat': '', 'folded': 'Y', 'gender': 'F', 'name': 'People', 'description': 'Slim Fit Casual Shirt', 'finalPrice': '698', 'strickPrice': '1398', 'discount': 40, 'productSize': 'XS, S, M, L, XL', 'link': 'https://www.myntra.com/shirts/people/people-women-red-slim-fit-printed-casual-shirt/13326742/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/29/67f758f5-4ae3-4b64-9d04-12b0653882ac1609216911815-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/29/bfe99a69-6150-4723-bbf0-71a9427b9f151609216911865-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/29/022f8755-1003-418a-a4d6-1b080b591a5f1609216911910-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/29/0ddb8111-22d7-4961-92d7-747515b6bd4b1609216911967-4.jpg"] },
+    // { 'cat': '', 'folded': '', 'gender': 'F', 'name': 'Roadster', 'description': 'Women Slim Fit Casual Shirt', 'finalPrice': '699', 'strickPrice': '1399', 'discount': 50, 'productSize': 'XS, S, M, L, XL', 'link': 'https://www.myntra.com/shirts/roadster/roadster-women-white--black-slim-fit-checked-casual-shirt/1805909/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1805909/2017/4/20/11492684152945-Roadster-Women--white-Regular-Fit-Checked-Casual-Shirt-3201492684152700-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1805909/2017/4/20/11492684152923-Roadster-Women--white-Regular-Fit-Checked-Casual-Shirt-3201492684152700-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1805909/2017/4/20/11492684152901-Roadster-Women--white-Regular-Fit-Checked-Casual-Shirt-3201492684152700-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1805909/2017/4/20/11492684152867-Roadster-Women--white-Regular-Fit-Checked-Casual-Shirt-3201492684152700-4.jpg"] },
     { 'cat': '', 'folded': '', 'gender': 'F', 'name': 'Kook N Keech', 'description': 'Women Regular Fit Casual Shirt', 'finalPrice': '764', 'strickPrice': '1699', 'discount': 55, 'productSize': 'XS, S, M, L, XL', 'link': 'https://www.myntra.com/shirts/kook-n-keech/kook-n-keech-women-black-regular-fit-printed-casual-shirt/2371017/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2371017/2019/1/29/eb400cc1-d29d-41b8-8ef0-6b7bd0472cef1548742853245-Kook-N-Keech-Women-Black-Regular-Fit-Printed-Casual-Shirt-11-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2371017/2019/1/29/1de12781-ee3c-4ab0-8c7a-5df620972ae51548742853229-Kook-N-Keech-Women-Black-Regular-Fit-Printed-Casual-Shirt-11-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2371017/2019/1/29/27aadf59-0759-4bcd-bdd3-074d35e8af341548742853215-Kook-N-Keech-Women-Black-Regular-Fit-Printed-Casual-Shirt-11-3.jpg"] },
     // { 'cat': '', 'folded': '', 'gender': 'F', 'name': 'People', 'description': 'Regular Fit Casual Shirt', 'finalPrice': '', 'strickPrice': '', 'discount': 0, 'productSize': 'XS, S, M, L, XL, XXL', 'link': 'https://www.myntra.com/shirts/people/people-women-white-regular-fit-checked-casual-shirt/13326734/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/29/251fc175-093d-4f6a-99cf-e16da2fe58251609220044711-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/29/a2fe342e-322d-4d8d-bcbd-b2a1f2a4666a1609220044774-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/29/938f903a-9d19-4914-8189-10ee9c2100671609220044836-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/29/cffe8c34-1f4f-4120-abfb-4dc5da48ff731609220044893-4.jpg"] },
     { 'cat': 'W', 'folded': 'Y', 'gender': 'F', 'name': 'Style Quotient', 'description': 'Women Regular Fit Casual Shirt', 'finalPrice': '584', 'strickPrice': '1499', 'discount': 61, 'productSize': 'S, M, L, XL, XXL', 'link': 'https://www.myntra.com/shirts/style-quotient/style-quotient-women-white-regular-fit-solid-casual-shirt/8628921/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8628921/2019/2/14/9f98d526-dc82-4a13-bc49-4f943f0ae44f1550147071167-Style-Quotient-Women-White-Regular-Fit-Solid-Casual-Shirt-57-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8628921/2019/2/14/5cc85fd1-2edd-47e4-86d0-15b1e9bff7341550147071152-Style-Quotient-Women-White-Regular-Fit-Solid-Casual-Shirt-57-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8628921/2019/2/14/9bb7214a-521a-4669-a39f-50f8625f0ff91550147071137-Style-Quotient-Women-White-Regular-Fit-Solid-Casual-Shirt-57-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8628921/2019/2/14/ac5c4843-3ca2-441f-b865-c08bd470e4241550147071121-Style-Quotient-Women-White-Regular-Fit-Solid-Casual-Shirt-57-4.jpg"] },
@@ -180,9 +223,43 @@ let data = [
     // { 'cat': '', 'folded': '', 'gender': 'F', 'name': 'Roadster', 'description': 'Regular Fit Solid Casual Shirt', 'finalPrice': '', 'strickPrice': '', 'discount': 0, 'productSize': 'S, M, L, XL', 'link': 'https://www.myntra.com/shirts/roadster/roadster-women-blue-regular-fit-solid-casual-shirt-with-waist-tie-up-detail/13257868/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13257868/2021/1/6/7b20cccf-8b8e-475d-b7d1-95e183e90b2c1609934743724-Roadster-Women-Shirts-7321609934742032-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13257868/2021/1/6/0cf2bdf9-c4bc-4ee6-8573-d187be85162d1609934743685-Roadster-Women-Shirts-7321609934742032-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13257868/2021/1/6/fd146a1a-9023-4873-b42c-f2b691847df81609934743639-Roadster-Women-Shirts-7321609934742032-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13257868/2021/1/6/f4824682-e35a-4a57-9c06-6bb3df8f5d9b1609934743593-Roadster-Women-Shirts-7321609934742032-4.jpg"] },
     // { 'cat': '', 'folded': '', 'gender': 'F', 'name': 'Roadster', 'description': 'Regular Fit Solid Casual Shirt', 'finalPrice': '', 'strickPrice': '', 'discount': 0, 'productSize': 'S, M, L, XL', 'link': 'https://www.myntra.com/shirts/roadster/roadster-women-blue-regular-fit-solid-casual-shirt-with-waist-tie-up-detail/13257872/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13257872/2021/1/6/33166f5b-bdc1-4b89-8047-b2bd60af4fd01609934806653-Roadster-Women-Shirts-9401609934804101-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13257872/2021/1/6/6bbc48f2-eadf-40e7-a475-2f54ee5d68311609934806604-Roadster-Women-Shirts-9401609934804101-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13257872/2021/1/6/081dd351-c9d0-47ef-a318-2efb264c84b51609934806524-Roadster-Women-Shirts-9401609934804101-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13257872/2021/1/6/9c7b7ad9-6f9f-42a5-8775-97adff34bc0e1609934806440-Roadster-Women-Shirts-9401609934804101-4.jpg"] },
     { 'cat': 'W', 'folded': '', 'gender': 'F', 'name': 'Park Avenue', 'description': 'Women Slim Fit Casual Shirt', 'finalPrice': '559', 'strickPrice': '1599', 'discount': 65, 'productSize': 'XS, S, M, L, XL', 'link': 'https://www.myntra.com/shirts/park-avenue/park-avenue-women--white-slim-fit-solid-casual-shirt/10802772/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10802772/2020/2/4/67813b62-4c20-4c11-8f48-df57b84acb8f1580806662055-Park-Avenue-Women-Shirts-9391580806661050-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10802772/2020/2/4/d22b3212-9d31-4447-a7a7-0afe39a9655f1580806662008-Park-Avenue-Women-Shirts-9391580806661050-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10802772/2020/2/4/c784e05e-f99b-4c91-ae4e-58d8145d72721580806661964-Park-Avenue-Women-Shirts-9391580806661050-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10802772/2020/2/4/86c33016-3dd5-4565-a295-1c6fca340bab1580806661914-Park-Avenue-Women-Shirts-9391580806661050-4.jpg"] },
-    { 'cat': 'W', 'folded': '', 'gender': 'F', 'name': 'Annabelle by Pantaloons', 'description': 'Women Regular Fit Formal Shirt', 'finalPrice': '719', 'strickPrice': '899', 'discount': 20, 'productSize': 'XS, S, M, L, XL, XXL', 'link': 'https://www.myntra.com/shirts/annabelle-by-pantaloons/annabelle-by-pantaloons-women-white-regular-fit-solid-formal-shirt/11367530/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/1/21/f5a91bf2-b69a-4bbf-a96e-b84e863eb8ea1579562557339-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/1/21/152c75a9-2fce-4a5b-90ca-8a42a90c91a41579562557457-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/1/21/9a660516-90b3-46ae-b3b8-920c0253965e1579562557537-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/1/21/7f6be20e-bad3-4b61-84e1-0b3bb4900e241579562557583-4.jpg"] },
-    { 'cat': 'W', 'folded': '', 'gender': 'F', 'name': 'Tokyo Talkies', 'description': 'Regular Fit Casual Shirt', 'finalPrice': '459', 'strickPrice': '1149', 'discount': 60, 'productSize': 'S, M, L, XL', 'link': 'https://www.myntra.com/shirts/tokyo-talkies/tokyo-talkies-women-blue--white-regular-fit-striped-casual-shirt/12479234/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/9/18/5e1f50c9-145b-4f2a-b059-31d7830136b81600384601193-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/9/18/433cf019-5053-42b6-8f19-858c579f680a1600384601272-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/9/18/a0651e51-0cab-4af2-b9ae-89dfa4bf1a3a1600384601365-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/9/18/6bb57e6f-a43e-433e-a2e9-a663262a5a541600384601460-4.jpg"] },
-    // { 'cat': 'W', 'folded': 'Y', 'gender': 'F', 'name': 'H&M', 'description': 'Women Solid Cotton Shirt', 'finalPrice': '', 'strickPrice': '', 'discount': 0, 'productSize': 'XS, S, M, L, XL', 'link': 'https://www.myntra.com/shirts/hm/hm-women-white-solid-cotton-shirt/13239042/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/14/ad608ea8-73b4-4e76-a2f4-10b28bc26f2f1607929539341-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/14/357d3a5c-b09f-40da-a44b-c334d3b813361607929539398-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/14/8303660f-8962-4dce-a169-cf7e2c8fe4a51607929539475-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/14/e1ec27e3-2864-4ff7-9bd1-493c54686ac91607929539544-4.jpg"] },
-    { 'cat': '', 'folded': '', 'gender': 'F', 'name': 'Roadster', 'description': 'Regular Fit Cuban Collar Shirt', 'finalPrice': '599', 'strickPrice': '999', 'discount': 40, 'productSize': 'S, M, L, XL', 'link': 'https://www.myntra.com/shirts/roadster/roadster-women-teal-blue-regular-fit-solid-cuban-collar-casual-shirt/11934526/buy', 'otherImages': ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11934526/2020/11/27/81b0f4aa-78a0-408d-abd0-9a6b8b6107511606454194733-Roadster-Women-Tops-441606454192561-1.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11934526/2020/11/27/74f0e100-e1ee-4f6a-9406-e8eedb15346d1606454194692-Roadster-Women-Tops-441606454192561-2.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11934526/2020/11/27/de1236f2-8aea-4508-b79a-9cd2578500181606454194653-Roadster-Women-Tops-441606454192561-3.jpg", "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11934526/2020/11/27/6c3992ad-e5ea-4bea-ae06-2b209ca20f3c1606454194617-Roadster-Women-Tops-441606454192561-4.jpg"] }]
+    
+    { 
+        'cat': 'W', 
+        'folded': '', 
+        'gender': 'F', 
+        'name': 'Annabelle by Pantaloons', 
+        'description': 'Women Regular Fit Formal Shirt', 
+        'finalPrice': '719', 
+        'strickPrice': '899', 
+        'discount': 20, 
+        'productSize': 'XS, S, M, L, XL, XXL', 
+        'link': 'https://www.myntra.com/shirts/annabelle-by-pantaloons/annabelle-by-pantaloons-women-white-regular-fit-solid-formal-shirt/11367530/buy', 
+        'otherImages': [
+            "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/1/21/f5a91bf2-b69a-4bbf-a96e-b84e863eb8ea1579562557339-1.jpg", 
+            "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/1/21/152c75a9-2fce-4a5b-90ca-8a42a90c91a41579562557457-2.jpg", 
+            "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/1/21/9a660516-90b3-46ae-b3b8-920c0253965e1579562557537-3.jpg", 
+            "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/1/21/7f6be20e-bad3-4b61-84e1-0b3bb4900e241579562557583-4.jpg"
+        ] 
+    },
+    
+    // { 
+    //     'cat': 'W', 
+    //     'folded': 'Y', 
+    //     'gender': 'F', 
+    //     'name': 'H&M', 
+    //     'description': 'Women Solid Cotton Shirt', 
+    //     'finalPrice': '', 'strickPrice': '', 
+    //     'discount': 0, 
+    //     'productSize': 'XS, S, M, L, XL', 
+    //     'link': 'https://www.myntra.com/shirts/hm/hm-women-white-solid-cotton-shirt/13239042/buy', 
+    //     'otherImages': [
+    //         "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/14/ad608ea8-73b4-4e76-a2f4-10b28bc26f2f1607929539341-1.jpg", 
+    //         "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/14/357d3a5c-b09f-40da-a44b-c334d3b813361607929539398-2.jpg", 
+    //         "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/14/8303660f-8962-4dce-a169-cf7e2c8fe4a51607929539475-3.jpg", 
+    //         "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/12/14/e1ec27e3-2864-4ff7-9bd1-493c54686ac91607929539544-4.jpg"
+    //     ] 
+    // },
+]
 
 module.exports = data;

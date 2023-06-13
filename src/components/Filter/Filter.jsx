@@ -34,12 +34,14 @@ const Filter = () => {
             <section>
                 <h5>Catogories</h5>
                 <div>
-                    <input type="checkbox" id="white-color" name="color" value="white"/>
-                    <label htmlFor="white-color">Sleeve Shirts</label>
+                    <input type="checkbox" id="sleeve-shirts" name="shirts" value="sleeve-shirts"
+                        // onClick={}
+                    />
+                    <label htmlFor="sleeve-shirts">Sleeve Shirts</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="blue-color" name="color" value="blue"/>
-                    <label htmlFor="blue-color">Folded Sleeve Shirts</label>
+                    <input type="checkbox" id="folded-sleeve-shirts" name="shirts" value="folded-sleeve-shirts"/>
+                    <label htmlFor="folded-sleeve-shirts">Folded Sleeve Shirts</label>
                 </div>
             </section>
             <section>
