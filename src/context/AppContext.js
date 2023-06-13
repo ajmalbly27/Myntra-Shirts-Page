@@ -4,9 +4,13 @@ import data from "../constants/data";
 export const AppContext = createContext();
 
 export const AppProvider = (props) => {
+    // eslint-disable-next-line
     const [allProducts, setAllProducts] = useState(data);
     const [filteredProducts, setFilteredProducts] = useState(data);
     const [cart, setCart] = useState([]);
+    const [roadsterCheckboxChecked, setRoadsterCheckboxChecked] = useState(false);
+    const [wrongCheckboxChecked, setWrongCheckboxChecked] = useState(false);
+    const [highlanderCheckboxChecked, setHighlanderCheckboxChecked] = useState(false);
 
     const addToCart = (selectedProduct) => {
     
@@ -79,6 +83,42 @@ export const AppProvider = (props) => {
 
     }
 
+    const roadster = () => {
+        // Fetch or filter the related data based on checkbox state
+        if(!roadsterCheckboxChecked) {
+            setFilteredProducts(allProducts.filter((item) => {
+                return item.name === 'Roadster';
+            }))
+        }else {
+            setFilteredProducts(allProducts);
+        }
+        setRoadsterCheckboxChecked(!roadsterCheckboxChecked);
+    }
+
+    const wrong = () => {
+        // Fetch or filter the related data based on checkbox state
+        if(!wrongCheckboxChecked) {
+            setFilteredProducts(allProducts.filter((item) => {
+                return item.name === 'WROGN';
+            }))
+        }else {
+            setFilteredProducts(allProducts);
+        }
+        setWrongCheckboxChecked(!wrongCheckboxChecked);
+    }
+
+    const highlander = () => {
+        // Fetch or filter the related data based on checkbox state
+        if(!highlanderCheckboxChecked) {
+            setFilteredProducts(allProducts.filter((item) => {
+                return item.name === 'HIGHLANDER';
+            }))
+        }else {
+            setFilteredProducts(allProducts);
+        }
+        setHighlanderCheckboxChecked(!highlanderCheckboxChecked);
+    }
+
     return(
         <AppContext.Provider value={{
             filteredProducts,
@@ -89,7 +129,10 @@ export const AppProvider = (props) => {
             decreaseQuantity,
             allFilter,
             maleFilter,
-            femaleFilter
+            femaleFilter,
+            roadster,
+            wrong,
+            highlander
         }}>
             {props.children}
         </AppContext.Provider>

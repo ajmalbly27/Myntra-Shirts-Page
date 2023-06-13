@@ -3,6 +3,7 @@ import logo from "../../images/Myntra-Logo.png";
 import logoright from "../../images/right-logo.png";
 
 const EmptyCartNavbar = () => {
+
     return (
         <div className="empty-cart-navbar-wrapper">
             <img className="myntra-logo-empty-cart" src={logo} alt="Myntra-logo"/>
